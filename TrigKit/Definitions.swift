@@ -30,6 +30,10 @@ public enum Quadrant {
     public func isPositiveX() -> Bool {
         return self == .First || self == .Fourth
     }
+
+    public func isPositiveY() -> Bool {
+        return self == .First || self == .Second
+    }
 }
 
 public enum Measure {
