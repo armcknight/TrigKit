@@ -21,6 +21,22 @@ public struct CartesianCoordinate2D {
 
 extension CartesianCoordinate2D {
 
+    public func distance(to coordinate: CartesianCoordinate2D) -> Double {
+        return sqrt(pow(x - coordinate.x, 2) + pow(y - coordinate.y, 2))
+    }
+
+}
+
+extension CGPoint {
+
+    public func distance(to coordinate: CGPoint) -> Double {
+        return sqrt(pow(Double(x - coordinate.x), 2) + pow(Double(y - coordinate.y), 2))
+    }
+
+}
+
+extension CartesianCoordinate2D {
+
     // MARK: CGPoint conversion
 
     init(x: CGFloat, y: CGFloat) {
