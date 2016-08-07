@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496F47781D56F43100E2DCED /* TrigKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 496F47771D56F43100E2DCED /* TrigKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		496F477F1D56F43100E2DCED /* TrigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496F47741D56F43100E2DCED /* TrigKit.framework */; };
+		496F47841D56F43100E2DCED /* TrigKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47831D56F43100E2DCED /* TrigKitTests.swift */; };
+		496F478F1D56F43F00E2DCED /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F478E1D56F43F00E2DCED /* Functions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		496F47801D56F43100E2DCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 496F476B1D56F43100E2DCED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496F47731D56F43100E2DCED;
+			remoteInfo = TrigKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		496F47741D56F43100E2DCED /* TrigKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrigKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		496F47771D56F43100E2DCED /* TrigKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrigKit.h; sourceTree = "<group>"; };
+		496F47791D56F43100E2DCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496F477E1D56F43100E2DCED /* TrigKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		496F47831D56F43100E2DCED /* TrigKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigKitTests.swift; sourceTree = "<group>"; };
+		496F47851D56F43100E2DCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496F478E1D56F43F00E2DCED /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		496F47701D56F43100E2DCED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496F477B1D56F43100E2DCED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496F477F1D56F43100E2DCED /* TrigKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		496F476A1D56F43100E2DCED = {
+			isa = PBXGroup;
+			children = (
+				496F47761D56F43100E2DCED /* TrigKit */,
+				496F47821D56F43100E2DCED /* TrigKitTests */,
+				496F47751D56F43100E2DCED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		496F47751D56F43100E2DCED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				496F47741D56F43100E2DCED /* TrigKit.framework */,
+				496F477E1D56F43100E2DCED /* TrigKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		496F47761D56F43100E2DCED /* TrigKit */ = {
+			isa = PBXGroup;
+			children = (
+				496F47771D56F43100E2DCED /* TrigKit.h */,
+				496F47791D56F43100E2DCED /* Info.plist */,
+				496F478E1D56F43F00E2DCED /* Functions.swift */,
+			);
+			path = TrigKit;
+			sourceTree = "<group>";
+		};
+		496F47821D56F43100E2DCED /* TrigKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				496F47831D56F43100E2DCED /* TrigKitTests.swift */,
+				496F47851D56F43100E2DCED /* Info.plist */,
+			);
+			path = TrigKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		496F47711D56F43100E2DCED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496F47781D56F43100E2DCED /* TrigKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		496F47731D56F43100E2DCED /* TrigKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496F47881D56F43100E2DCED /* Build configuration list for PBXNativeTarget "TrigKit" */;
+			buildPhases = (
+				496F476F1D56F43100E2DCED /* Sources */,
+				496F47701D56F43100E2DCED /* Frameworks */,
+				496F47711D56F43100E2DCED /* Headers */,
+				496F47721D56F43100E2DCED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrigKit;
+			productName = TrigKit;
+			productReference = 496F47741D56F43100E2DCED /* TrigKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		496F477D1D56F43100E2DCED /* TrigKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496F478B1D56F43100E2DCED /* Build configuration list for PBXNativeTarget "TrigKitTests" */;
+			buildPhases = (
+				496F477A1D56F43100E2DCED /* Sources */,
+				496F477B1D56F43100E2DCED /* Frameworks */,
+				496F477C1D56F43100E2DCED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496F47811D56F43100E2DCED /* PBXTargetDependency */,
+			);
+			name = TrigKitTests;
+			productName = TrigKitTests;
+			productReference = 496F477E1D56F43100E2DCED /* TrigKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		496F476B1D56F43100E2DCED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andrew McKnight";
+				TargetAttributes = {
+					496F47731D56F43100E2DCED = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					496F477D1D56F43100E2DCED = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 496F476E1D56F43100E2DCED /* Build configuration list for PBXProject "TrigKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 496F476A1D56F43100E2DCED;
+			productRefGroup = 496F47751D56F43100E2DCED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				496F47731D56F43100E2DCED /* TrigKit */,
+				496F477D1D56F43100E2DCED /* TrigKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		496F47721D56F43100E2DCED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496F477C1D56F43100E2DCED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		496F476F1D56F43100E2DCED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496F478F1D56F43F00E2DCED /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496F477A1D56F43100E2DCED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496F47841D56F43100E2DCED /* TrigKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		496F47811D56F43100E2DCED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496F47731D56F43100E2DCED /* TrigKit */;
+			targetProxy = 496F47801D56F43100E2DCED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		496F47861D56F43100E2DCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		496F47871D56F43100E2DCED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		496F47891D56F43100E2DCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TrigKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.armcknight.TrigKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		496F478A1D56F43100E2DCED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TrigKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.armcknight.TrigKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		496F478C1D56F43100E2DCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrigKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.armcknight.TrigKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		496F478D1D56F43100E2DCED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrigKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.armcknight.TrigKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		496F476E1D56F43100E2DCED /* Build configuration list for PBXProject "TrigKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496F47861D56F43100E2DCED /* Debug */,
+				496F47871D56F43100E2DCED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496F47881D56F43100E2DCED /* Build configuration list for PBXNativeTarget "TrigKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496F47891D56F43100E2DCED /* Debug */,
+				496F478A1D56F43100E2DCED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		496F478B1D56F43100E2DCED /* Build configuration list for PBXNativeTarget "TrigKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496F478C1D56F43100E2DCED /* Debug */,
+				496F478D1D56F43100E2DCED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 496F476B1D56F43100E2DCED /* Project object */;
+}
