@@ -11,6 +11,8 @@
 		496F477F1D56F43100E2DCED /* TrigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496F47741D56F43100E2DCED /* TrigKit.framework */; };
 		496F47841D56F43100E2DCED /* TrigKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47831D56F43100E2DCED /* TrigKitTests.swift */; };
 		496F478F1D56F43F00E2DCED /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F478E1D56F43F00E2DCED /* Functions.swift */; };
+		496F47AA1D57BA3B00E2DCED /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47A91D57BA3B00E2DCED /* Definitions.swift */; };
+		496F47AB1D57BD1100E2DCED /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47A91D57BA3B00E2DCED /* Definitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 		496F47831D56F43100E2DCED /* TrigKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigKitTests.swift; sourceTree = "<group>"; };
 		496F47851D56F43100E2DCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496F478E1D56F43F00E2DCED /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		496F47A91D57BA3B00E2DCED /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 				496F47771D56F43100E2DCED /* TrigKit.h */,
 				496F47791D56F43100E2DCED /* Info.plist */,
 				496F478E1D56F43F00E2DCED /* Functions.swift */,
+				496F47A91D57BA3B00E2DCED /* Definitions.swift */,
 			);
 			path = TrigKit;
 			sourceTree = "<group>";
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496F47AA1D57BA3B00E2DCED /* Definitions.swift in Sources */,
 				496F478F1D56F43F00E2DCED /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496F47AB1D57BD1100E2DCED /* Definitions.swift in Sources */,
 				496F47841D56F43100E2DCED /* TrigKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +391,7 @@
 				496F478A1D56F43100E2DCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496F478B1D56F43100E2DCED /* Build configuration list for PBXNativeTarget "TrigKitTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +400,7 @@
 				496F478D1D56F43100E2DCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
