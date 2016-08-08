@@ -53,4 +53,21 @@ public enum Measure {
     
     case Exsecant
     case Excosecant
+
+    public func shortName() -> String {
+        switch self {
+        case .Hypotenuse: return "hyp"
+        case .Chord: return "crd"
+        case .Sine: return "sin"
+        case .Cosine: return "cos"
+        case .Tangent: return "tan"
+        case .Secant: return "sec"
+        case .Cosecant: return "csc"
+        case .Cotangent: return "cot"
+        case .Versine: return "siv"
+        case .Coversine: return "cvs"
+        case .Exsecant: return "exsec"
+        case .Excosecant: return "excsc"
+        }
+    }
 }
