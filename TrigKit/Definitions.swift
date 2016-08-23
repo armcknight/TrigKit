@@ -37,6 +37,7 @@ public enum Quadrant {
 }
 
 public enum Measure {
+    case Arc
     case Hypotenuse
     case Chord
 
@@ -56,6 +57,7 @@ public enum Measure {
 
     public func shortName() -> String {
         switch self {
+        case .Arc: return "arc"
         case .Hypotenuse: return "hyp"
         case .Chord: return "crd"
         case .Sine: return "sin"

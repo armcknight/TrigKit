@@ -58,8 +58,17 @@ extension CartesianCoordinate2D {
 }
 
 public struct PolarCoordinate2D {
-    let r: Double
-    let theta: Radian
+    public let r: Double
+    public let theta: Radian
+
+    public init(r: Double, theta: Radian) {
+        self.r = r
+        self.theta = theta
+    }
+
+    public func cartesian() -> CartesianCoordinate2D {
+        return CartesianCoordinate2D(x: r * cos(theta), y: r * sin(theta))
+    }
 }
 
 public typealias CGCoordinate2D = CartesianCoordinate2D
@@ -71,10 +80,6 @@ public func angleFrom(a: CartesianCoordinate2D, to b: CartesianCoordinate2D) -> 
     let yDist = a.y - b.y
     let angle = atan2(yDist, xDist)
     return angle + M_PI
-}
-
-public func cartesianPointFrom(polarPoint: PolarCoordinate2D) -> CartesianCoordinate2D {
-    return CartesianCoordinate2D(x: polarPoint.r * cos(polarPoint.theta), y: polarPoint.r * sin(polarPoint.theta))
 }
 
 public func radians(fromDegrees degrees: Degree) -> Radian {
