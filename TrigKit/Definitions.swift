@@ -3,7 +3,7 @@
 //  TrigKit
 //
 //  Created by Andrew McKnight on 8/7/16.
-//  Copyright © 2016 Andrew McKnight. All rights reserved.
+//  Copyright © 2016 Two Ring Software. All rights reserved.
 //
 
 import Foundation
