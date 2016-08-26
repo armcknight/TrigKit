@@ -8,6 +8,11 @@
 
 import Foundation
 
+public enum AngleOrientation {
+    case Clockwise
+    case Counterclockwise
+}
+
 public enum Quadrant {
     case First
     case Second

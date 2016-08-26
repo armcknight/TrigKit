@@ -60,14 +60,17 @@ extension CartesianCoordinate2D {
 public struct PolarCoordinate2D {
     public let r: Double
     public let theta: Radian
+    public let orientation: AngleOrientation
 
-    public init(r: Double, theta: Radian) {
+    public init(r: Double, theta: Radian, orientation: AngleOrientation = .Counterclockwise) {
         self.r = r
         self.theta = theta
+        self.orientation = orientation
     }
 
     public func cartesian() -> CartesianCoordinate2D {
-        return CartesianCoordinate2D(x: r * cos(theta), y: r * sin(theta))
+        let counterclockwiseTheta = orientation == .Counterclockwise ? theta : 2 * M_PI - theta
+        return CartesianCoordinate2D(x: r * cos(counterclockwiseTheta), y: r * sin(counterclockwiseTheta))
     }
 }
 
