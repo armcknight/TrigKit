@@ -41,7 +41,7 @@ public enum Quadrant {
     }
 }
 
-public enum Measure {
+public enum Measure: Int {
     case Arc
     case Hypotenuse
     case Chord
@@ -76,5 +76,29 @@ public enum Measure {
         case .Exsecant: return "exsec"
         case .Excosecant: return "excsc"
         }
+    }
+
+    public func longName() -> String {
+        switch self {
+        case .Arc: return "Arc"
+        case .Hypotenuse: return "Hypotenuse"
+        case .Chord: return "Chord"
+        case .Sine: return "Sine"
+        case .Cosine: return "Cosine"
+        case .Tangent: return "Tangent"
+        case .Secant: return "Secant"
+        case .Cosecant: return "Cosecant"
+        case .Cotangent: return "Cotangent"
+        case .Versine: return "Versine"
+        case .Coversine: return "Coversine"
+        case .Exsecant: return "Exsecant"
+        case .Excosecant: return "Excosecant"
+        }
+    }
+
+    public static func allMeasures() -> [Measure] {
+        return [
+        Arc, Hypotenuse, Chord, Sine, Cosine, Tangent, Secant, Cosecant, Cotangent, Versine, Coversine, Exsecant, Excosecant
+        ]
     }
 }
