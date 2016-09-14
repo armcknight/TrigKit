@@ -50,6 +50,9 @@ public enum Measure: Int {
     case Cosine
     case Tangent
 
+    case SineOpposite
+    case CosineOpposite
+
     case Secant
     case Cosecant
     case Cotangent
@@ -65,8 +68,8 @@ public enum Measure: Int {
         case .Arc: return "arc"
         case .Hypotenuse: return "hyp"
         case .Chord: return "crd"
-        case .Sine: return "sin"
-        case .Cosine: return "cos"
+        case .Sine, .SineOpposite: return "sin"
+        case .Cosine, .CosineOpposite: return "cos"
         case .Tangent: return "tan"
         case .Secant: return "sec"
         case .Cosecant: return "csc"
@@ -85,6 +88,8 @@ public enum Measure: Int {
         case .Chord: return "Chord"
         case .Sine: return "Sine"
         case .Cosine: return "Cosine"
+        case .SineOpposite: return "Opposite Sine"
+        case .CosineOpposite: return "Opposite Cosine"
         case .Tangent: return "Tangent"
         case .Secant: return "Secant"
         case .Cosecant: return "Cosecant"
@@ -98,7 +103,7 @@ public enum Measure: Int {
 
     public static func allMeasures() -> [Measure] {
         return [
-        Arc, Hypotenuse, Chord, Sine, Cosine, Tangent, Secant, Cosecant, Cotangent, Versine, Coversine, Exsecant, Excosecant
+        Arc, Hypotenuse, Chord, Sine, SineOpposite, CosineOpposite, Cosine, Tangent, Secant, Cosecant, Cotangent, Versine, Coversine, Exsecant, Excosecant
         ]
     }
 }
