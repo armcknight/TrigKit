@@ -50,7 +50,7 @@ extension CartesianCoordinate2D {
         self = CartesianCoordinate2D(x: x, y: y)
     }
 
-    public func cgPoint(canvasSize: CGSize) -> CGPoint {
+    public func cgPoint(_ canvasSize: CGSize) -> CGPoint {
         let x = CGFloat(self.x) + canvasSize.width / 2
         let y = canvasSize.height / 2 - CGFloat(self.y)
         return CGPoint(x: x, y: y);
@@ -62,14 +62,14 @@ public struct PolarCoordinate2D {
     public let theta: Radian
     public let orientation: AngleOrientation
 
-    public init(r: Double, theta: Radian, orientation: AngleOrientation = .Counterclockwise) {
+    public init(r: Double, theta: Radian, orientation: AngleOrientation = .counterclockwise) {
         self.r = r
         self.theta = theta
         self.orientation = orientation
     }
 
     public func cartesian() -> CartesianCoordinate2D {
-        let counterclockwiseTheta = orientation == .Counterclockwise ? theta : 2 * M_PI - theta
+        let counterclockwiseTheta = orientation == .counterclockwise ? theta : 2 * M_PI - theta
         return CartesianCoordinate2D(x: r * cos(counterclockwiseTheta), y: r * sin(counterclockwiseTheta))
     }
 }
@@ -78,7 +78,7 @@ public typealias CGCoordinate2D = CartesianCoordinate2D
 public typealias Degree = Double
 public typealias Radian = Double
 
-public func angleFrom(a: CartesianCoordinate2D, to b: CartesianCoordinate2D) -> Radian {
+public func angleFrom(_ a: CartesianCoordinate2D, to b: CartesianCoordinate2D) -> Radian {
     let xDist = a.x - b.x
     let yDist = a.y - b.y
     let angle = atan2(yDist, xDist)
@@ -94,11 +94,11 @@ public func degrees(fromRadians radians: Radian) -> Degree {
 }
 
 /// Reduce any angle to its counter-clockwise equivalent in `[0,2π]`
-public func counterClockwiseAngle(radians: Radian) -> Radian {
-    return (2.0 * M_PI + radians) % (2.0 * M_PI)
+public func counterClockwiseAngle(_ radians: Radian) -> Radian {
+    return (2.0 * M_PI + radians).truncatingRemainder(dividingBy: (2.0 * M_PI))
 }
 
 /// Reduce any angle to its clockwise equivalent in `[0,2π]`
-public func clockwiseAngle(radians: Radian) -> Radian {
-    return (2.0 * M_PI - radians) % (2.0 * M_PI)
+public func clockwiseAngle(_ radians: Radian) -> Radian {
+    return (2.0 * M_PI - radians).truncatingRemainder(dividingBy: (2.0 * M_PI))
 }

@@ -9,101 +9,101 @@
 import Foundation
 
 public enum AngleOrientation {
-    case Clockwise
-    case Counterclockwise
+    case clockwise
+    case counterclockwise
 }
 
 public enum Quadrant {
-    case First
-    case Second
-    case Third
-    case Fourth
+    case first
+    case second
+    case third
+    case fourth
 
     public init(angle: Radian) {
         let cc = counterClockwiseAngle(angle)
         if cc <= M_PI / 2 {
-            self = .First
+            self = .first
         } else if cc <= M_PI {
-            self = .Second
+            self = .second
         } else if cc <= 3 * M_PI / 2 {
-            self = .Third
+            self = .third
         } else {
-            self = .Fourth
+            self = .fourth
         }
     }
 
     public func isPositiveX() -> Bool {
-        return self == .First || self == .Fourth
+        return self == .first || self == .fourth
     }
 
     public func isPositiveY() -> Bool {
-        return self == .First || self == .Second
+        return self == .first || self == .second
     }
 }
 
 public enum Measure: Int {
-    case Arc
-    case Hypotenuse
-    case Chord
+    case arc
+    case hypotenuse
+    case chord
 
-    case Sine
-    case Cosine
-    case Tangent
+    case sine
+    case cosine
+    case tangent
 
-    case SineOpposite
-    case CosineOpposite
+    case sineOpposite
+    case cosineOpposite
 
-    case Secant
-    case Cosecant
-    case Cotangent
+    case secant
+    case cosecant
+    case cotangent
 
-    case Versine
-    case Coversine
+    case versine
+    case coversine
     
-    case Exsecant
-    case Excosecant
+    case exsecant
+    case excosecant
 
     public func shortName() -> String {
         switch self {
-        case .Arc: return "arc"
-        case .Hypotenuse: return "hyp"
-        case .Chord: return "crd"
-        case .Sine, .SineOpposite: return "sin"
-        case .Cosine, .CosineOpposite: return "cos"
-        case .Tangent: return "tan"
-        case .Secant: return "sec"
-        case .Cosecant: return "csc"
-        case .Cotangent: return "cot"
-        case .Versine: return "siv"
-        case .Coversine: return "cvs"
-        case .Exsecant: return "exsec"
-        case .Excosecant: return "excsc"
+        case .arc: return "arc"
+        case .hypotenuse: return "hyp"
+        case .chord: return "crd"
+        case .sine, .sineOpposite: return "sin"
+        case .cosine, .cosineOpposite: return "cos"
+        case .tangent: return "tan"
+        case .secant: return "sec"
+        case .cosecant: return "csc"
+        case .cotangent: return "cot"
+        case .versine: return "siv"
+        case .coversine: return "cvs"
+        case .exsecant: return "exsec"
+        case .excosecant: return "excsc"
         }
     }
 
     public func longName() -> String {
         switch self {
-        case .Arc: return "Arc"
-        case .Hypotenuse: return "Hypotenuse"
-        case .Chord: return "Chord"
-        case .Sine: return "Sine"
-        case .Cosine: return "Cosine"
-        case .SineOpposite: return "Opposite Sine"
-        case .CosineOpposite: return "Opposite Cosine"
-        case .Tangent: return "Tangent"
-        case .Secant: return "Secant"
-        case .Cosecant: return "Cosecant"
-        case .Cotangent: return "Cotangent"
-        case .Versine: return "Versine"
-        case .Coversine: return "Coversine"
-        case .Exsecant: return "Exsecant"
-        case .Excosecant: return "Excosecant"
+        case .arc: return "Arc"
+        case .hypotenuse: return "Hypotenuse"
+        case .chord: return "Chord"
+        case .sine: return "Sine"
+        case .cosine: return "Cosine"
+        case .sineOpposite: return "Opposite Sine"
+        case .cosineOpposite: return "Opposite Cosine"
+        case .tangent: return "Tangent"
+        case .secant: return "Secant"
+        case .cosecant: return "Cosecant"
+        case .cotangent: return "Cotangent"
+        case .versine: return "Versine"
+        case .coversine: return "Coversine"
+        case .exsecant: return "Exsecant"
+        case .excosecant: return "Excosecant"
         }
     }
 
     public static func allMeasures() -> [Measure] {
         return [
-        Arc, Hypotenuse, Chord, Sine, SineOpposite, CosineOpposite, Cosine, Tangent, Secant, Cosecant, Cotangent, Versine, Coversine, Exsecant, Excosecant
+        arc, hypotenuse, chord, sine, sineOpposite, cosineOpposite, cosine, tangent, secant, cosecant, cotangent, versine, coversine, exsecant, excosecant
         ]
     }
 }

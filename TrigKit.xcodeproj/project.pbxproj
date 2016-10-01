@@ -155,6 +155,7 @@
 				TargetAttributes = {
 					496F47731D56F43100E2DCED = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					496F477D1D56F43100E2DCED = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -332,6 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -349,6 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armcknight.TrigKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
