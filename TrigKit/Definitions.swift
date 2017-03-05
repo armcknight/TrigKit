@@ -8,19 +8,14 @@
 
 import Foundation
 
-public enum AngleOrientation {
-    case clockwise
-    case counterclockwise
-}
-
 public enum Quadrant {
     case first
     case second
     case third
     case fourth
 
-    public init(angle: Radian) {
-        let cc = counterClockwiseAngle(angle)
+    public init(angle: Angle) {
+        let cc = angle.counterclockwise.radians
         if cc <= M_PI / 2 {
             self = .first
         } else if cc <= M_PI {

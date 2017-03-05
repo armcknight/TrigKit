@@ -9,6 +9,7 @@
 import Foundation
 
 public struct CartesianCoordinate2D {
+
     public let x: Double
     public let y: Double
 
@@ -17,24 +18,31 @@ public struct CartesianCoordinate2D {
         self.y = y
     }
 
-}
-
-extension CartesianCoordinate2D {
-
-    public func distance(to coordinate: CartesianCoordinate2D) -> Double {
-        return sqrt(pow(x - coordinate.x, 2) + pow(y - coordinate.y, 2))
-    }
-    
-}
-
-extension CartesianCoordinate2D {
-
-    // MARK: CGPoint conversion
-
     init(x: CGFloat, y: CGFloat) {
         self.x = Double(x)
         self.y = Double(y)
     }
+
+}
+
+public extension CartesianCoordinate2D {
+
+    func distance(to coordinate: CartesianCoordinate2D) -> Double {
+        return sqrt(pow(x - coordinate.x, 2) + pow(y - coordinate.y, 2))
+    }
+
+    func angle(to b: CartesianCoordinate2D) -> Angle {
+        let xDist = x - b.x
+        let yDist = y - b.y
+        let angle = atan2(yDist, xDist) + M_PI
+        return Angle(radians: angle)
+    }
+    
+}
+
+// MARK: CGPoint conversions
+
+extension CartesianCoordinate2D {
 
     public init(cgPoint: CGPoint, size: CGSize) {
         let x = cgPoint.x - size.width / 2
@@ -47,4 +55,5 @@ extension CartesianCoordinate2D {
         let y = canvasSize.height / 2 - CGFloat(self.y)
         return CGPoint(x: x, y: y);
     }
+
 }
