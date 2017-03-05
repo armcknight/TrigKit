@@ -6,26 +6,8 @@
 //  Copyright © 2016 Two Ring Software. All rights reserved.
 //
 
+import CoreGraphics
 import Foundation
-
-public struct CartesianCoordinate2D {
-    public let x: Double
-    public let y: Double
-
-    public init(x: Double, y: Double) {
-        self.x = x
-        self.y = y
-    }
-
-}
-
-extension CartesianCoordinate2D {
-
-    public func distance(to coordinate: CartesianCoordinate2D) -> Double {
-        return sqrt(pow(x - coordinate.x, 2) + pow(y - coordinate.y, 2))
-    }
-
-}
 
 extension CGPoint {
 
@@ -35,46 +17,6 @@ extension CGPoint {
 
 }
 
-extension CartesianCoordinate2D {
-
-    // MARK: CGPoint conversion
-
-    init(x: CGFloat, y: CGFloat) {
-        self.x = Double(x)
-        self.y = Double(y)
-    }
-
-    public init(cgPoint: CGPoint, size: CGSize) {
-        let x = cgPoint.x - size.width / 2
-        let y = size.height / 2 - cgPoint.y
-        self = CartesianCoordinate2D(x: x, y: y)
-    }
-
-    public func cgPoint(_ canvasSize: CGSize) -> CGPoint {
-        let x = CGFloat(self.x) + canvasSize.width / 2
-        let y = canvasSize.height / 2 - CGFloat(self.y)
-        return CGPoint(x: x, y: y);
-    }
-}
-
-public struct PolarCoordinate2D {
-    public let r: Double
-    public let theta: Radian
-    public let orientation: AngleOrientation
-
-    public init(r: Double, theta: Radian, orientation: AngleOrientation = .counterclockwise) {
-        self.r = r
-        self.theta = theta
-        self.orientation = orientation
-    }
-
-    public func cartesian() -> CartesianCoordinate2D {
-        let counterclockwiseTheta = orientation == .counterclockwise ? theta : 2 * M_PI - theta
-        return CartesianCoordinate2D(x: r * cos(counterclockwiseTheta), y: r * sin(counterclockwiseTheta))
-    }
-}
-
-public typealias CGCoordinate2D = CartesianCoordinate2D
 public typealias Degree = Double
 public typealias Radian = Double
 

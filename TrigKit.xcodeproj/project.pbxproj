@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494823491E6BCAE9003DD4EC /* PolarCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494823481E6BCAE9003DD4EC /* PolarCoordinate2D.swift */; };
+		4948234B1E6BCB09003DD4EC /* CartesianCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948234A1E6BCB09003DD4EC /* CartesianCoordinate2D.swift */; };
 		496F47781D56F43100E2DCED /* TrigKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 496F47771D56F43100E2DCED /* TrigKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		496F477F1D56F43100E2DCED /* TrigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496F47741D56F43100E2DCED /* TrigKit.framework */; };
 		496F47841D56F43100E2DCED /* TrigKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47831D56F43100E2DCED /* TrigKitTests.swift */; };
 		496F478F1D56F43F00E2DCED /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F478E1D56F43F00E2DCED /* Functions.swift */; };
 		496F47AA1D57BA3B00E2DCED /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47A91D57BA3B00E2DCED /* Definitions.swift */; };
 		496F47AB1D57BD1100E2DCED /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F47A91D57BA3B00E2DCED /* Definitions.swift */; };
+		49E297191DFD05950011C864 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F478E1D56F43F00E2DCED /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		494823481E6BCAE9003DD4EC /* PolarCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarCoordinate2D.swift; sourceTree = "<group>"; };
+		4948234A1E6BCB09003DD4EC /* CartesianCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartesianCoordinate2D.swift; sourceTree = "<group>"; };
 		496F47741D56F43100E2DCED /* TrigKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrigKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		496F47771D56F43100E2DCED /* TrigKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrigKit.h; sourceTree = "<group>"; };
 		496F47791D56F43100E2DCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +85,8 @@
 				496F47791D56F43100E2DCED /* Info.plist */,
 				496F478E1D56F43F00E2DCED /* Functions.swift */,
 				496F47A91D57BA3B00E2DCED /* Definitions.swift */,
+				494823481E6BCAE9003DD4EC /* PolarCoordinate2D.swift */,
+				4948234A1E6BCB09003DD4EC /* CartesianCoordinate2D.swift */,
 			);
 			path = TrigKit;
 			sourceTree = "<group>";
@@ -202,7 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494823491E6BCAE9003DD4EC /* PolarCoordinate2D.swift in Sources */,
 				496F47AA1D57BA3B00E2DCED /* Definitions.swift in Sources */,
+				4948234B1E6BCB09003DD4EC /* CartesianCoordinate2D.swift in Sources */,
 				496F478F1D56F43F00E2DCED /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +222,7 @@
 			files = (
 				496F47AB1D57BD1100E2DCED /* Definitions.swift in Sources */,
 				496F47841D56F43100E2DCED /* TrigKitTests.swift in Sources */,
+				49E297191DFD05950011C864 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -316,6 +327,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -339,7 +351,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -358,7 +369,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armcknight.TrigKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
