@@ -66,23 +66,6 @@ public struct Angle {
         }
     }
 
-    public func snappedAngle(snappingAngle: Angle) -> Angle {
-        if snappingAngle.radians == 0 {
-            return self
-        }
-
-        let interval = Int(degrees / (snappingAngle.degrees / 2))
-
-        if interval == 0 {
-            return .zero
-        } else if interval == Int(360 / (snappingAngle.degrees / 2) - 1) {
-            return Angle(degrees: 360)
-        } else {
-            let factor = interval / 2
-            return Angle(radians: snappingAngle.radians * Radian(factor))
-        }
-    }
-
 }
 
 private extension Angle {
