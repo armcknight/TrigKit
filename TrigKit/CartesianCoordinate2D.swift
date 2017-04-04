@@ -34,7 +34,7 @@ public extension CartesianCoordinate2D {
     func angle(to b: CartesianCoordinate2D) -> Angle {
         let xDist = x - b.x
         let yDist = y - b.y
-        let angle = atan2(yDist, xDist) + M_PI
+        let angle = atan2(yDist, xDist) + .pi
         return Angle(radians: angle)
     }
     

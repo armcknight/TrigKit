@@ -34,7 +34,7 @@ public struct Angle {
     }
 
     public static var zero: Angle { get { return Angle(radians: 0) } }
-    public static var π: Angle { get { return Angle(radians: M_PI) } }
+    public static var π: Angle { get { return Angle(radians: .pi) } }
 
     public func isZero() -> Bool {
         return radians == 0
@@ -46,14 +46,14 @@ public struct Angle {
 
     public var minimized: Angle {
         get {
-            return Angle(radians: fmod(radians, 2.0 * M_PI))
+            return Angle(radians: fmod(radians, 2.0 * .pi))
         }
     }
 
     /// Reduce any angle to its clockwise equivalent in `[0,2π]`
     public var clockwise: Angle {
         get {
-            let value = (2.0 * M_PI - radians).truncatingRemainder(dividingBy: (2.0 * M_PI))
+            let value = (2.0 * .pi - radians).truncatingRemainder(dividingBy: (2.0 * .pi))
             return Angle(radians: value, orientation: .clockwise)
         }
     }
@@ -61,7 +61,7 @@ public struct Angle {
     /// Reduce any angle to its counter-clockwise equivalent in `[0,2π]`
     public var counterclockwise: Angle {
         get {
-            let value = (2.0 * M_PI + radians).truncatingRemainder(dividingBy: (2.0 * M_PI))
+            let value = (2.0 * .pi + radians).truncatingRemainder(dividingBy: (2.0 * .pi))
             return Angle(radians: value, orientation: .counterclockwise)
         }
     }
@@ -71,11 +71,11 @@ public struct Angle {
 private extension Angle {
 
     static func degrees(fromRadians radians: Radian) -> Degree {
-        return radians * 180.0 / M_PI
+        return radians * 180.0 / .pi
     }
 
     static func radians(fromDegrees degrees: Degree) -> Radian {
-        return degrees * M_PI / 180.0
+        return degrees * .pi / 180.0
     }
 
 }

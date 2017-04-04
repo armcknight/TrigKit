@@ -20,7 +20,7 @@ public struct PolarCoordinate2D {
     }
 
     public func cartesian() -> CartesianCoordinate2D {
-        let counterclockwiseTheta = orientation == .counterclockwise ? theta.radians : 2 * M_PI - theta.radians
+        let counterclockwiseTheta = orientation == .counterclockwise ? theta.radians : 2 * .pi - theta.radians
         return CartesianCoordinate2D(x: r * cos(counterclockwiseTheta), y: r * sin(counterclockwiseTheta))
     }
 }
